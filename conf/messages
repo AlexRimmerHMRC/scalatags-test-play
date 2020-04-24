@@ -1,0 +1,9 @@
+twirl.title = title of twirl page
+twirl.heading = heading of twirl page
+
+tags.title = title of tags page
+tags.heading = heading of tags page
+
+person.name = Name: {0}
+person.age = Age: {0}
+person.height = Height: {0}

@@ -1,0 +1,14 @@
+@import models.Person
+
+@(people: List[Person])(implicit messages: Messages)
+
+@mainTemplate("twirl.title") {
+    <h1 class='really-big'>@messages("twirl.heading")</h1>
+    @people.map { person =>
+        <p>
+            <div class='bold'>@messages("person.name", person.name)</div>
+            <div>@messages("person.age", person.age)</div>
+            <div>@messages("person.height", person.height)</div>
+        </p>
+    }
+}

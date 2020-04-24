@@ -1,0 +1,12 @@
+@(title: String)(content: Html)(implicit messages: Messages)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@messages(title)</title>
+        <link rel='stylesheet' type='text/css' href=@controllers.routes.Assets.versioned("stylesheets/custom.css")>
+    </head>
+    <body>
+        @content
+    </body>
+</html>
